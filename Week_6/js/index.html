@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Test</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const alertBtn = document.getElementById('alertBtn');
+                alertBtn.addEventListener('click', function() {
+                    console.log('Button was clicked!');
+                    let currentTime = new Date().toLocaleTimeString();
+                    console.log('Current Time:', currentTime);
+                    alert('Welcome to JavaScript! The current time is: ' + currentTime);
+                });
+            });
+        </script>
+   </head>
+   <body>
+        <header>
+            <h1>Javascript Examples</h1>
+        </header>
+        <main class="sandbox-container">
+            <section class="card">
+                <h2>Example 1: Basic DOM Manipulation</h2>
+                <p>This example demonstrates how to manipulate the DOM using JavaScript. Click the button will alert you.</p>
+                <button id="alertBtn">Click Here</button>
+            </section>    
+        </main>
+
+   </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    color: #38bdf8;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.sandbox-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Base Card Styles */
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 350px;
+}
+
+.card h2 {
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.interactive-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/** Transtition and Transform Examples */
+
+.target-box {
+    background-color: #3b82f6;
+    color: #ffffff;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+/* When the user hovers over the box, the box transforms */
+.target-box:hover {
+    background-color: #10b981;
+    transform: translateY(-20px) scale(1.3) rotate(10deg);
+}
+
+.looping-orbit {
+    background-color: #a855f7;
+    color: #ffffff;
+    animation: orbit-and-shift 4s ease-in-out alternate infinite;
+}
+
+/** define a keyframe for orbit-and-shfit animation */
+@keyframes orbit-and-shift {
+    0% {
+        transform: translateX(-40px) scale(1);
+        background-color: #a855f7;
+        border-radius: 8px;
+    }
+    50% {
+        transform: translateX(40px) scale(0.8) rotate(180deg);
+        background-color: #ec4899;
+        border-radius: 50%;
+    }
+    100% {
+        transform: translateY(-30px) scale(1.2) rotate(360deg);
+        background-color: #f43f5e;
+        border-radius: 4px;
+    }
+
+}
+
+
+.hybrid-box {
+    background-color: #eab308;
+    color: #0f172a;
+}
+.hybrid-card:hover .hybrid-box {
+    animation: hybrid-animation 0.6s ease-in-out 2 forwards;
+}
+
+@keyframes hybrid-animation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.7);
+    }
+    50% {
+        transform: scale(1.3) skewX(-10deg);
+        box-shadow: 0 0 25px 10px rgba(234, 179, 8, 0.4);
+    }
+    100% {
+        transform: scale(1.1) skewX(0deg);
+        box-shadow: 0 0 0 0 rgba(234, 179, 8, 0);
+        background-color: #f97316
+    }
+}
