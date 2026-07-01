@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Animation</title>
+        <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+          <header>
+               <h1>CSS Animation</h1>
+               <p> Hover, interact and observe transform, transition, and keyframe mechanics</p>
+          </header>
+
+          <main class="sandbox-container">
+               <section class="card transition-card">
+                    <h2>Smooth Transitions</h2>
+                    <p> This card utilizes smooth transitions for a polished user experience. Hovering over 
+                         the card triggers a background color change
+                    </p>
+                    <div class="interactive-box target-box">Hover Over Here!</div>
+               </section>
+
+                <section class="card keyframe-card">
+                    <h2>Infinite Keyframes</h2>
+                    <p> This card demonstrates infinite keyframe that loops alters position, scale and color
+                         autonmously without user interaction.
+                    </p>
+                    <div class="interactive-box looping-orbit">Orbiting Box</div>
+               </section>
+
+               <section class="card hybrid-card">
+                    <h2>Hover-Triggered Keyframes</h2>
+                    <p> This example shows how to keep a component static until hovered. hovering over card binds the keyframe animation to the child element, creating a dynamic visual effect.   
+                    </p>
+                    <div class="interactive-box hybrid-box">Hover to Animate</div>
+               </section>
+               
+
+          </main>
+   </body>
+</html>
