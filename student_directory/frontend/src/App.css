@@ -1,0 +1,14 @@
+.workspace { max-width: 950px; margin: 30px auto; padding: 0 15px; font-family: sans-serif; }
+h1 { color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+.entry-form { background: #f8fafc; padding: 20px; border: 1px solid #cbd5e1; border-radius: 6px; margin-bottom: 30px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.entry-form h3 { width: 100%; margin: 0 0 10px 0; color: #475569; }
+.entry-form input { padding: 8px 12px; border: 1px solid #94a3b8; border-radius: 4px; flex: 1; min-width: 150px; }
+.entry-form input:disabled { background: #cbd5e1; cursor: not-allowed; }
+button { padding: 8px 14px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; }
+.primary-btn { background: #2563eb; color: white; }
+.edit-btn { background: #eab308; color: black; margin-right: 5px; }
+.delete-btn { background: #dc2626; color: white; }
+table { width: 100%; border-collapse: collapse; text-align: left; margin-top: 20px; }
+th, td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
+th { background: #f1f5f9; color: #475569; }
+.badge { background: #dcfce7; color: #166534; padding: 4px 8px; border-radius: 12px; font-weight: bold; }
